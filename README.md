@@ -27,7 +27,7 @@ command        /usr/bin/find
 
 ## TODOs
 There are still couple of things needed to be added into this project, they are:
-1. Exception handling for more edge cases. Currently this project only handles these two exceptions:
+1. Exception handling for more edge cases. Currently this project only handles these exceptions:
    * The components in the cron expression expected to be "integer-like" cannot be converted to an integer. For example, `abc` in
    `*/15 abc 1,15 * 1-5 /usr/bin/find` cannot be converted to an integer for `hour` field.
    * The components in the cron expression expected to be "integer-like" can be converted to an integer, 
